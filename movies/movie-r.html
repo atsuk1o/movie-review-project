@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Screen Craic — movie trailer & review with fixed header/footer, static background, and accessible layout." />
+  <title>Screen Craic — Inception Trailer & Review</title>
+
+  <!-- Bootstrap 5 (for grid, forms, responsive utilities) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Site CSS (keep this last so you can override Bootstrap if needed) -->
+  <link rel="stylesheet" href="../css/style-r.css" />
+</head>
+<body>
+  <!-- ===== Fixed Navbar ===== -->
+  <header class="site-header fixed-top shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Main navigation">
+      <div class="container-fluid px-3">
+        <a class="navbar-brand fw-bold" href="#intro">Screen Craic</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#intro">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#trailer">Trailer</a></li>
+            <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Main Content (background stays fixed) ===== -->
+  <main id="content" class="hero-bg">
+    <!-- Hero intro -->
+    <section id="intro" class="container section-pad safe-left">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold mb-3">Inception (2010)</h1>
+          <p class="lead mb-4">Experience the mind-bending world of dreams within dreams. Watch the trailer, then dive into a clean, readable review.</p>
+          <div class="d-flex gap-2">
+            <a class="btn btn-primary btn-lg" href="#trailer">Watch Trailer</a>
+            <a class="btn btn-outline-light btn-lg" href="#review">Read Review</a>
+          </div>
+        </div>		
+      </div>
+	  <br></br>
+      <div class="mt-3">
+        <img src="../photos/r-posterMovie.jpg" alt="Inception theatrical poster" class="poster-img img-fluid rounded-3">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section-pad safe-left">
+      <div class="row g-4">
+        <div class="col-lg-12">
+          <h2 class="h3 mb-3">About This Review</h2>
+          <p><em>Inception</em> blends action and psychological thriller elements with a high-concept premise.<br>
+			This page demonstrates a consistent navigation, external CSS, and a Bootstrap-enhanced layout.</p>
+          <ul class="mb-0">
+            <li>Fixed header & footer; content scrolls over a static background.</li>
+            <li>Left-aligned reading column for long-form text.</li>
+            <li>Responsive embedded trailer (Internet Archive).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trailer (responsive) -->
+    <section id="trailer" class="container section-pad safe-left">
+      <div class="row">
+        <div class="col-lg-10">
+          <h2 class="h3 mb-3">Trailer</h2>
+          <div class="video-wrap video-4x3">
+            <iframe
+				class="video-frame"
+				src="https://archive.org/embed/INCEPTIONTrailer_201810?autoplay=1&loop=1&mute=1"
+				title="Inception Trailer (Internet Archive)"
+				frameborder="0"
+				allow="autoplay; fullscreen"
+				allowfullscreen
+            ></iframe>
+          </div>
+          <p class="text-secondary small mt-2">Source: Internet Archive (embedded 4:3). If the player fails to load, try a different network.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review (readable column) -->
+    <section id="review" class="container section-pad safe-left">
+      <div class="row">
+        <div class="col-xl-8 col-lg-9">
+          <h2 class="h3 mb-3">Review</h2>
+          <article class="readable readable--plain">
+            <p>Well, I finally got around to seeing this movie, arguably one of the most iconic and definitive films of the 21st century, and one of the most significant films I had never seen. Part of the reason I procrastinated so long with it (years) was because I thought it would be one of those movies that is so sophisticated a normal person can’t understand it. Usually with complex movies like these I actually follow along pretty well until about the hour-fifteen minute mark, at which point I cease to understand anything that’s happening (examples include <em>Minority Report</em>, <em>The Fugitive</em>, and <em>Flightplan</em>). To my surprise I ended up following along pretty well and enjoying the movie much more than I anticipated I would. I’ve had a slight grudge against anything Christopher Nolan-related since I saw <em>The Dark Knight</em> for the first time several months ago, which underwhelmed me completely. Part of the reason I didn’t enjoy that film as much was because I had a headache the entire time while watching it, but still. Anyways, I had had <em>Inception</em> on DVD for quite a while and I decided that it was due time to see it. And I’m glad I did; it is very well-made and actually I think most people will find something to enjoy about it. I’m not gonna act like this is some unknown movie that I’m the first one to discover, but I will say that it is quite good.</p>
+		
+            <p>The plot follows Dom Cobb (Leonardo DiCaprio), a skilled “extractor” who goes into people’s subconscious to find information in dreams. Cobb and his fellow extractor Arthur (Joseph Gordon-Levitt) are tasked by a businessman named Saito (Ken Watanabe) to perform “inception” inside the subconscious of Robert Fischer (Cillian Murphy), the son of one of Saito’s rival businessmen. Inception means putting an idea into a mind, instead of taking one out, which is a lot more difficult. In this case, Saito wants Cobb and Arthur to put the idea of destroying his father’s business into Fischer’s head. To do this, Cobb must assemble a team of other people who can pull this off, including Eames (Tom Hardy), a conman, Ariadne (Elliot Page), who will design the dream worlds, and Yusuf (Dileep Rao), a scientist who is basically their getaway driver. As the team starts to execute their mission Cobb has trouble because of his dead wife Mal (Marion Cotillard) constantly entering the dreams. That’s the basic idea; there is a LOT of other complicated stuff that could be considered spoilers that I also won’t get into here.</p>
+
+            <p>I definitely enjoyed at least 80% of this movie. In terms of originality of concepts and creativity, <em>Inception</em> has a lot to offer. In fact, I’d even go as far as to say that it centers around one of the most original movie ideas of the 2010’s. The special effects and visual art are very well-done. It’s kind of a shame I didn’t get to see it in theaters, but I would’ve only been five years old at the time and I was busy watching more ~appropriate~ movies. Christopher Nolan did a great job directing this—you can tell it took forever to make. There were multiple scenes where I thought, “this must have cost a lot of money.” Visually, it is extremely impressive. The performances are decent and decent only, which is fine because this kind of movie doesn’t require much advanced acting, although I would say DiCaprio did an especially nice job. It’s also important how smoothly <em>Inception</em> blends science fiction with action, thriller, and drama. If you aren’t usually a fan of sci-fi, chances are you won’t mind this film. Despite this, <em>Inception</em> still more than satisfies a sci-fi fan’s needs for the bending of time and space. I will now praise the movie’s ambiguous and memorable ending: Cobb spins a top to test reality vs. dream, walks away, and we’re left unsure if it will fall. That’s now one of my favorite endings.</p>
+
+            <p>I have a few small complaints, but they aren’t dealbreakers. My biggest problem is how the early sound effects are almost ridiculously loud while dialogue can be quiet. Turn it up to hear speech and then—boom—big crash. Another complaint (not the film’s fault) is I dislike widescreen’s black bars. Lastly, it can be tricky at times to know if we’re in a dream; perhaps that’s deliberate.</p>
+
+            <h3>Safety Chart</h3>
+            <ul>
+              <li><strong>Violence:</strong> 7/10 — Shootings, explosions, car crashes. Not much blood. A man dies in a hospital bed (non-violent).</li>
+              <li><strong>Language:</strong> 5/10 — Mostly minor; some profanities noted.</li>
+              <li><strong>Drinking/Smoking:</strong> 3/10 — Some drinking; not notable.</li>
+            </ul>
+
+            <p class="mb-0">In the end, I’m glad I can cross <em>Inception</em> off the long watchlist. If you like action movies or longer, intelligent thrillers, this one’s worth it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (form requirement) -->
+    <section id="contact" class="container section-pad safe-left">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h2 class="h3 mb-3">Contact</h2>
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Your name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Your message…" required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Fixed Footer ===== -->
+  <footer class="site-footer fixed-bottom bg-dark text-white-50 py-2">
+    <div class="container-fluid d-flex flex-wrap gap-2 justify-content-between align-items-center px-3">
+      <small>© 2025 Screen Craic</small>
+      <ul class="nav small">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">Privacy</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">Terms</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (for navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1C9xYF5t6bY6JCF5BvYlG8Y1Y5n3E5w5yX8LZ6WZ5y+" crossorigin="anonymous"></script>
+
+  <!-- Simple client-side validation -->
+  <script>
+  (() => {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+  </script>
+
+    <!-- Auto-insert images after paragraphs in the review article -->
+  <script>
+  (function() {
+    const imageFiles = [
+      { file: 'r-leo.jpg', alt: 'Leonardo DiCaprio as Cobb' },
+      { file: 'r-rolling.jpeg', alt: 'Rotating hallway fight scene' },
+      { file: 'r-bend.jpg', alt: 'City bending dreamscape' },
+      { file: 'r-ending.jpg', alt: 'Ambiguous ending — spinning top' },  // added
+      { file: 'r-allcast.jpg', alt: 'Inception main cast ensemble' },
+      { file: 'r-saito.jpg', alt: 'Saito in negotiation' }
+    ];
+
+    const srcBase = '../photos/';
+    const article = document.querySelector('article.readable.readable--plain');
+    if (!article) return;
+    const paras = article.querySelectorAll(':scope > p');
+
+    paras.forEach((p, i) => {
+      const info = imageFiles[i % imageFiles.length];
+      const img = document.createElement('img');
+      img.src = srcBase + info.file;
+      img.alt = info.alt;
+      img.className = 'img-fluid rounded-3 my-3';
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      p.insertAdjacentElement('afterend', img);
+    });
+  })();
+  </script>
+
+
+</body>
+</html>
