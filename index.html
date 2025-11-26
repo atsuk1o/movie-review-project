@@ -3,6 +3,8 @@
 <head>
     <title>Screen Craic</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div id="header">
@@ -24,28 +26,47 @@
     
     <div id="main">
         <div id="sidebar">
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
-            <h1>Movies!</h1>
+            <div class="request-section">
+                <h2>Request a review from us!</h2>
+                <p>Have a movie you want us to review? Send a request and we will do our best!</p>
+                <form id="requestForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError">Enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError">Valid email required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="movieTitle">Movie Title *</label>
+                        <input type="text" id="movieTitle" name="movieTitle" required>
+                        <span class="error-message" id="movieError">Enter a title</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Why you want us to review this?</label>
+                        <textarea id="reason" name="reason"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        Thanks! We will consider your request.
+                    </div>
+                </form>
+            </div>
         </div>
+        
         <div id="content">
-            <h4>
+            <h1>
                 Welcome to Screen Craic!
-            </h4>
+            </h1>
             <p>
                 This website was made by Ryan, Veronika and Yaroslav. We decided that we can use to share our opinion on movies
                 that we found to be very interesting as well as practice our coding skills. Please, sit back, relax and enjoy!
             </p>
 
-            
             <div class="movie-grid">
                 <div class="movie-box">
                     <img src="" alt="Movie 1">
@@ -83,7 +104,7 @@
     
     <div id="footer">
         <div class="foot"></div>
-        <div class="foot"><h3>&copy; Y. Kuznets, R. Aranas, V. Surkova 2025</h3></div>
+        <div class="foot"><h3>&copy; R. Aranas, V. Surkova, Y. Kuznets 2025</h3></div>
         <div class="foot"></div>
     </div>
 </body>

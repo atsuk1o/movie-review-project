@@ -157,7 +157,7 @@ body {
 }
 
 /* Footer */
-#footer {
+.footer {
     display: flex;
     background: #2c3e50;
     padding: 25px 0;
@@ -200,4 +200,29 @@ body {
     .movie-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.error-message {
+    color: #e23b29;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.form-group input.error, .form-group select.error, .form-group textarea.error {
+    border-color: #e74c3c;
+}
+
+.success-message {
+    background: #27ae60;
+    color: white;
+    display: none;
+}
+
+.success-message.show {
+    display: block;
 }
