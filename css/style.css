@@ -217,6 +217,155 @@ body {
     display: block;
 }
 
+.title-banner {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.title-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.title-overlay {
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.9);
+    z-index: 10;
+}
+
+.title-overlay h1 {
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+
+/* Movie Info Card */
+.card.border-warning {
+    border-width: 2px !important;
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-body {
+    background: rgba(0,0,0,0.3);
+}
+
+.card-text strong {
+    color: #e67e22;
+}
+
+.text-warning {
+    font-size: 1.3rem;
+}
+
+.movie-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+.movie-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.movie-meta {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.movie-meta span {
+    margin: 0 10px;
+}
+
+.review-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.poster-container {
+    text-align: center;
+}
+
+.review-poster {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.movie-info {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.movie-info h2 {
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+
+.movie-info p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.review-content {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.review-content h2 {
+    color: #e67e22;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.review-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.review-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.review-footer {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+}
+
+.back-btn:hover {
+    background: #d35400;
+    color: white;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .movie-grid {
@@ -264,6 +413,35 @@ body {
         flex-direction: column;
         padding: 20px;
         gap: 10px;
+    }
+
+    .movie-header h1 {
+        font-size: 2rem;
+    }
+
+    .movie-meta {
+        font-size: 0.9rem;
+    }
+
+    .review-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .review-poster {
+        max-width: 250px;
+    }
+
+    .review-content {
+        padding: 25px 20px;
+    }
+
+    .review-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .review-content h3 {
+        font-size: 1.2rem;
     }
 }
 
