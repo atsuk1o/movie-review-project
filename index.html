@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screen Craic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="header1">
+                <img src="assets/screen-craic.png" alt="Screen Craic Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="header2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#reviews" role="button" data-bs-toggle="dropdown">
+                            Reviews
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="movies/movie-r.html">Inception</a></li>
+                            <li><a class="dropdown-item" href="movies/movie-v.html">The Expanse</a></li>
+                            <li><a class="dropdown-item" href="movies/movie-y.html">Rashomon</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="main">
+        <div id="sidebar">
+            <div class="request-section">
+                <h2>Request a review from us!</h2>
+                <p>Have a movie you want us to review? Send a request and we will do our best!</p>
+                <form id="requestForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError">Enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError">Valid email required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="movieTitle">Movie Title *</label>
+                        <input type="text" id="movieTitle" name="movieTitle" required>
+                        <span class="error-message" id="movieError">Enter a title</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Why you want us to review this?</label>
+                        <textarea id="reason" name="reason"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        Thanks! We will consider your request.
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div id="content">
+            <h1>
+                Welcome to Screen Craic!
+            </h1>
+            <p>
+                This website was made by Ryan, Veronika and Yaroslav. We decided that we can use to share our opinion on movies
+                that we found to be very interesting as well as practice our coding skills. Please, sit back, relax and enjoy!
+            </p>
+
+            <div class="movie-grid">
+                <div class="movie-box">
+                    <img src="" alt="Movie 1">
+                    <div class="movie-details">
+                        <h3>Inception</h3>
+                        <p>text</p>
+                        <span class="year"></span>
+                        <a href="movies/movie-r.html" class="read-more">Read full review →</a>
+                    </div>
+                </div>
+                
+                <div class="movie-box">
+                    <img src="" alt="Movie 2">
+                    <div class="movie-details">
+                        <h3>The Expanse </h3>
+                        <p>text</p>
+                        <span class="year"></span>
+                        <a href="movies/movie-v.html" class="read-more">Read full review →</a>
+                    </div>
+                </div>
+                
+                <div class="movie-box">
+                    <img src="assets/rashomon-poster2.jpg" alt="Movie 2">
+                    <div class="movie-details">
+                        <h3>Rashomon</h3>
+                        <span class="year">1950, Japan</span>
+                        <p>Yaroslav's opinion on Akira Kurosawa's masterpiece. 
+                           Learn about a movie that changed cinema world!</p>
+                        <a href="movies/movie-y.html" class="read-more">Read full review →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div class="foot"></div>
+        <div class="foot"><h3>&copy; R. Aranas, V. Surkova, Y. Kuznets 2025</h3></div>
+        <div class="foot"></div>
+    </div>
+</body>
+</html>
