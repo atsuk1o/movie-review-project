@@ -1,50 +1,167 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Screen Craic</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/script.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="header">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html" id="header1">
-                <img src="../assets/screen-craic.png" alt="Screen Craic Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" id="header2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#reviews" role="button" data-bs-toggle="dropdown">
-                            Reviews
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="movie-r.html">Inception</a></li>
-                            <li><a class="dropdown-item" href="movie-v.html">The Expanse</a></li>
-                            <li><a class="dropdown-item" href="movie-y.html">Rashomon</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <div id="main">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="The Expanse is a science fiction TV series set in a colonized solar system, where political tensions and a mysterious alien threat ignite conflict.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Expanse TV Series</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../css/style-v.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top" id="header" role="navigation" aria-label="Site main navigation">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../index.html" id="header1">
+				<span>Welcome to Screen Craic!</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle site navigation menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto" id="header2">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#reviews" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Open reviews dropdown">Reviews</a>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item" href="../movies/movie_ryan.html" aria-label="Read review for Inception movie">Inception </a></li>
+								<li><a class="dropdown-item" href="../movies/movie-v.html" aria-label="Read review for The Expanse TV series">The Expanse</a></li>
+								<li><a class="dropdown-item" href="../movies/movie-y.html" aria-label="Read review for Rashomon movie">Rashomon</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<div class="row">
+				<div class="col-sm-7 mx-auto">
+					<div id="carouselExampleIndicators" class="carousel slide" aria-label="Image carousel of The Expanse TV series">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Expanse main slide"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Protomolecule slide"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Spaceship slide"></button>
+						</div>
+						<div class="carousel-inner" >
+							<div class="carousel-item active">
+								<img src="../assets/expanse-main.jpg" class="d-block w-100" alt="Expanse team">
+							</div>
+							<div class="carousel-item">
+								<img src="../assets/expanse-protomolecule.jpg" class="d-block w-100" alt="Protomolecule">
+							</div>
+								<div class="carousel-item">
+								<img src="../assets/expanse-spaceship.jpg" class="d-block w-100" alt="Spaceship">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden" aria-label="Previous slide">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden" aria-label="Next slide">Next</span>
+						</button>
+					</div>	
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8">
+					<h3 class="text-center">About The Expanse</h3>
+					<p>The Expanse is often described as a space opera thanks to its sweeping storyline filled with political tension and intense drama. Despite that scale, the series stays firmly rooted in hard science fiction, paying close attention to realistic physics and scientific detail.</p>
+				</div>
+			</div>
+			<div class="row g-4 justify-content-center">			
+				<div class="col-md-8 col-lg-5 justify-content-right">
+					<h3 id="trailer" class="text-center">Enjoy the trailer!</h3>
+					<div class="ratio ratio-16x9">
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/M0QwBp_da28?si=pORj3pj5Hrg7Eux9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen aria-labelledby="trailer"></iframe>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-5">
+					<h3 class="text-center">Main characters:</h3>
+					<ul>
+						<li><b>Steven Strait</b> as <i>James Holden</i> – Captain of Rocinante</li>
+						<li><b>Dominique Tipper</b> as <i>Naomi Nagata</i> – Skilled member of Rocinante</li>
+						<li><b>Wes Chatham</b> as <i>Amos Burton</i> – Mechanic of Rocinante</li>
+						<li><b>Cas Anvar</b> as <i>Alex Kamal</i> – Rocinante’s pilot</li>
+						<li><b>Shohreh Aghdashloo</b> as <i>Chrisjen Avasarala</i> – UN politician from Earth</li>
+						<li><b>Thomas Jane</b> as <i>Josephus Miller</i> – A detective from Ceres</li>
+						<li><b>Frankie Adams</b> as <i>Bobbie Draper</i> – A Martian Marine</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 text-center">
+				<h3>Some interesting facts about <i>The Expanse</i> science-fiction TV series</h3>
+			</div>
+			<div class="row g-4 justify-content-center">
+				<div class="col-12 col-md-auto">
+					<div class="card card-space h-100" aria-label="Based on The Expanse novels">
+						<div class="card-body">
+							<img src="../assets/expanse-books.jpg" class="card-img-top" alt="The Expanse books">
+							<h4 class="card-title" style="text-align:center">Based on The Expanse novels</h4>
+							<p class="card-text">James S. A. Corey is a pen name</p>
+							<p class="card-text">Real authors are Ty Franck and Daniel Abraham</p>
+							<p class="card-text">Includes 6 seasons and 62 episodes</p>
+							<a href="https://www.jamessacorey.com/" class="btn btn-primary link" aria-label="Visit James S. A. Corey official website">Visit James S. A. Corey official website</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-auto">
+					<div class="card card-space h-100" aria-label="Scientific space realism">
+						<div class="card-body">
+							<img src="../assets/expanse-map.jpg" class="card-img-top" alt="Space realism">
+							<h4 class="card-title" style="text-align:center">Scientific space realism</h4>
+							<p class="card-text">Realistic acceleration and deceleration</p>
+							<p class="card-text">Carefully designed zero-gravity scenes</p>
+							<p class="card-text">Respect of lack of sound in space</p>
+							<a href="https://blog.ferrovial.com/en/2022/08/fiction-engineering-the-expanse/" class="btn btn-primary link" aria-label="Learn about engineering behind The Expanse">Engineering behind The Expanse</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-auto">
+					<div class="card card-space h-100" aria-label="Unique language Belter Creole">
+						<div class="card-body">
+							<img src="../assets/expanse-belter.jpg" class="card-img-top" alt="Belter Creole">
+							<h4 class="card-title" style="text-align:center">Unique language</h4>
+							<p class="card-text">Invented by linguist Nick Farmer</p>
+							<p class="card-text">Combines elements of English, Spanish and Chinese</p>
+							<p class="card-text">Adds cultural realism to life on the asteroid belt</p>
+							<a href="https://en.wikipedia.org/wiki/Belter_Creole" class="btn btn-primary link" aria-label="Learn about Belter Creole fictional language">About Belter Creole fictional language</a>
+						</div>
+					</div>
+				</div>
 
-    </div>
-    
-    <div id="footer">
-        <div class="foot"></div>
-        <div class="foot"><h3>&copy; R. Aranas, V. Surkova, Y. Kuznets 2025</h3></div>
-        <div class="foot"></div>
-    </div>
-</body>
+				<div class="col-12 col-md-auto">
+					<div class="card card-space h-100" aria-label="Awards and nominations for The Expanse">
+						<div class="card-body">
+							<img src="../assets/expanse-awards.jpg" class="card-img-top" alt="Awards">
+							<h4 class="card-title" style="text-align:center">Awards</h4>
+							<p class="card-text">Recognised for scientific accuracy and dramatic presentation</p>
+							<p class="card-text">Won multiple awards</p>
+							<p class="card-text">It's not just show, it's a space opera!</p>
+							<a href="https://en.wikipedia.org/wiki/The_Expanse_(TV_series)" class="btn btn-primary link" aria-label="View full list of awards and nominations">Full list of awards and nominations</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center"">
+				<div class="col-md-4 col-lg-8" style="text-align:center">
+					<form novalidate>
+						<p>Do you have issues with displaying content on this page? Please let us know</p>
+						<label class="form-label" style="width:50%">
+							<textarea style="width:70%"></textarea>
+						</label>
+						<br />
+						<button type="submit" id="submitBtn">Submit</button>
+					</form>
+				</div>
+			</div>		
+		</div>
+		<div id="footer" role="contentinfo">
+			<div class="foot"><h3>&copy; R. Aranas, V. Surkova, Y. Kuznets 2025</h3></div>
+		</div>
+		<script src="../js/script-v.js"></script>
+	</body>
 </html>
