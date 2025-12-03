@@ -9,12 +9,12 @@
     <script src="js/script-y.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="header">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="header" role="navigation" aria-label="Main site navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" id="header1">
                 <img src="assets/screen-craic.png" alt="Screen Craic Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -23,10 +23,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#reviews" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#reviews" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Open reviews dropdown">
                             Reviews
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-label="Reviews submenu">
                             <li><a class="dropdown-item" href="movies/movie_ryan.html">Inception</a></li>
                             <li><a class="dropdown-item" href="movies/movie-v.html">The Expanse</a></li>
                             <li><a class="dropdown-item" href="movies/movie-y.html">Rashomon</a></li>
@@ -37,25 +37,25 @@
         </div>
     </nav>
     
-    <div id="main">
-        <div id="sidebar">
+    <div id="main" role="main">
+        <div id="sidebar" role="complementary">
             <div class="request-section">
-                <h2>Request a review from us!</h2>
+                <h2 id="requestHeading">Request a review from us!</h2>
                 <p>Have a movie you want us to review? Send a request and we will do our best!</p>
-                <form id="requestForm" novalidate>
+                <form id="requestForm" novalidate aria-labelledby="requestHeading">
                     <div class="form-group">
                         <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required aria-required="true" aria-describedby="nameError">
                         <span class="error-message" id="nameError">Enter your name</span>
                     </div>
                     <div class="form-group">
                         <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required aria-required="true" aria-describedby="emailError">
                         <span class="error-message" id="emailError">Valid email required</span>
                     </div>
                     <div class="form-group">
                         <label for="movieTitle">Movie Title *</label>
-                        <input type="text" id="movieTitle" name="movieTitle" required>
+                        <input type="text" id="movieTitle" name="movieTitle" required aria-required="true" aria-describedby="movieError">
                         <span class="error-message" id="movieError">Enter a title</span>
                     </div>
                     <div class="form-group">
@@ -64,7 +64,7 @@
                     </div>
                     <button type="submit" class="submit-btn">Submit</button>
                     
-                    <div class="success-message" id="successMessage" style="display: none;">
+                    <div class="success-message" id="successMessage" style="display: none;" role="status" aria-live="polite">
                         Thanks! We will consider your request.
                     </div>
                 </form>
@@ -76,47 +76,47 @@
                 Welcome to Screen Craic!
             </h1>
             <p>
-                This website was made by Ryan, Veronika and Yaroslav. We decided that we can use to share our opinion on movies
+                This website was made by Ryan, Veronica and Yaroslav. We decided that we can use to share our opinion on movies
                 that we found to be very interesting as well as practice our coding skills. Please, sit back, relax and enjoy!
             </p>
 
-            <div class="movie-grid">
-                <div class="movie-box">
-                    <img src="assets/r-inceptionPoster2.jpg" alt="Movie 1">
+            <div class="movie-grid" role="list">
+                <div class="movie-box" role="listitem">
+                    <img src="assets/r-inceptionPoster2.jpg" alt="Inception movie poster">
                     <div class="movie-details">
                         <h3>Inception</h3>
                         <span class="year">2010, US</span>
                         <p>Ryan's web review on Christopher Nolan's dream thriller.</p>
                         <span class="year"></span>
-                        <a href="movies/movie_ryan.html" class="read-more">Read full review →</a>
+                        <a href="movies/movie_ryan.html" class="read-more">Read about Inception →</a>
                     </div>
                 </div>
                 
-                <div class="movie-box">
-                    <img src="assets/expanse-main-page.jpg" alt="Movie 2">
+                <div class="movie-box" role="listitem">
+                    <img src="assets/expanse-main-page.jpg" alt="The Expanse TV series poster">
                     <div class="movie-details">
                          <h3>The Expanse </h3>
                         <span class="year">2015-2022, US</span>
-						<p>Veronica is a huge fun of these science fiction space opera series</p>
-                        <a href="movies/movie-v.html" class="read-more">Read full review→</a>
+						<p>Veronica is a huge fan of these science fiction space opera series</p>
+                        <a href="movies/movie-v.html" class="read-more">Read about The Expanse →</a>
                     </div>
                 </div>
                 
-                <div class="movie-box">
-                    <img src="assets/rashomon-poster2.jpg" alt="Movie 2">
+                <div class="movie-box" role="listitem">
+                    <img src="assets/rashomon-poster2.jpg" alt="Rashomon movie poster">
                     <div class="movie-details">
                         <h3>Rashomon</h3>
                         <span class="year">1950, Japan</span>
                         <p>Yaroslav's opinion on Akira Kurosawa's masterpiece. 
                            Learn about a movie that changed cinema world!</p>
-                        <a href="movies/movie-y.html" class="read-more">Read full review →</a>
+                        <a href="movies/movie-y.html" class="read-more">Read about Rashomon →</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div id="footer">
+    <div id="footer" role="contentinfo">
         <div class="foot"></div>
         <div class="foot"><h3>&copy; R. Aranas, V. Surkova, Y. Kuznets 2025</h3></div>
         <div class="foot"></div>
