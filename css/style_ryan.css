@@ -1,6 +1,4 @@
-/* ======================
-   BASIC PAGE STYLES
-   ====================== */
+/* CSS Page Styling - by Ryan Aranas*/
 
 * {
   box-sizing: border-box;
@@ -71,9 +69,7 @@ p,
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-/* ======================
-   HEADER AND FOOTER
-   ====================== */
+/* Header & Footer */
 
 .header-bar .navbar-brand {
   font-weight: 700;
@@ -88,9 +84,7 @@ p,
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* ======================
-   HERO AREA
-   ====================== */
+/* Hero Banner Area */
 
 /* dark band with big title */
 .hero-banner {
@@ -119,9 +113,14 @@ p,
   font-weight: 900;
 }
 
-/* ======================
-   TEXT PANELS
-   ====================== */
+/*feedback from Lisa changes - changed button text to calibri*/
+.hero-banner .btn-sm {
+  font-family: Calibri, sans-serif;
+  font-size: 1.4rem;          
+  padding: 0.35rem 0.75rem;   
+}
+
+/* Article panel styles*/
 
 .article-panel {
   background-color: rgba(0, 0, 0, 0.45);
@@ -142,9 +141,7 @@ p,
   padding-bottom: 18px;
 }
 
-/* ======================
-   POSTER STRIP
-   ====================== */
+/* Posters */
 
 .poster-strip {
   margin-top: 120px;
@@ -230,9 +227,7 @@ p,
   height: auto;
 }
 
-/* ======================
-   TRAILER
-   ====================== */
+/* Trailer style */
 
 .trailer-box {
   position: relative;
@@ -252,9 +247,7 @@ p,
   display: block;
 }
 
-/* ======================
-   REVIEW IMAGES
-   ====================== */
+/* Images in the Review Article */
 
 .review-img {
   display: block;
@@ -277,9 +270,7 @@ p,
   clear: both;
 }
 
-/* ======================
-   SIDE CARDS
-   ====================== */
+/* Quick facts side boxes*/
 
 .movie-info-box dl {
   margin-bottom: 0;
@@ -305,14 +296,16 @@ p,
   letter-spacing: 0.12em;
 }
 
-/* small spacing above the blue "Link" button */
+/* small spacing above the blue "Feedback Form" button - feedback from Lisa changes - changed button text to calibri*/
+
 .contact-link-btn {
   margin-top: 4px;
+  font-family: Calibri, sans-serif;
+  font-size: 1.4rem;       
+  padding: 0.3rem 1.0rem;
 }
 
-/* ======================
-   RESPONSIVE
-   ====================== */
+/* Responsiveness setup */
 
 @media (min-width: 992px) {
   #review .movie-info-box {
