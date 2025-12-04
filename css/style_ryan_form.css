@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* this is the CSS for Inception Form by Ryan Aranas */
 * {
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 
-/* ===== BACKGROUND + SPACE FOR FIXED HEADER/FOOTER ===== */
+/* Background and fixed header and footer*/
 body.movie-background {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -49,7 +49,7 @@ body.movie-background {
   }
 }
 
-/* ===== CENTER THE BOX ===== */
+/* Center the submission box */
 .middle-holder {
   min-height: calc(100vh - 132px);
   display: flex;
@@ -58,7 +58,7 @@ body.movie-background {
   padding: 16px;
 }
 
-/* ===== FORM BOX ===== */
+/* this is for the actual form */
 .form-box {
   background-color: rgba(0, 0, 0, 0.78);
   padding: 18px 40px;
@@ -71,12 +71,12 @@ body.movie-background {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ===== TOP PART ===== */
+/*Top part of the form */
 .top-part {
   text-align: center;
   margin-bottom: 12px;
 }
-
+/*for the Totem*/
 .spin-box {
   display: inline-block;
   padding: 10px;
@@ -118,7 +118,7 @@ body.movie-background {
   opacity: 0.9;
 }
 
-/* ===== FORM PIECES ===== */
+/* elements of the form */
 form label {
   display: block;
   margin-top: 8px;
@@ -151,33 +151,34 @@ form textarea {
   resize: vertical;
 }
 
-/* ===== SUBMIT BUTTON ===== */
+/* submit button --- change on feedback session from Lisa*/
 form button[type="submit"] {
   width: 100%;
   margin-top: 10px;
   padding: 10px 12px;
   border-radius: 999px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   cursor: pointer;
 
+  font-family: Calibri, Arial, Helvetica, sans-serif; /* Calibri text */
   background-color: #ff9900;
-  color: #000000;
+  color: #ffffff;                                    /* white text */
 
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.7);
   transition: 0.15s;
 }
 
 form button[type="submit"]:hover {
-  background-color: #cc0000;
+  background-color: #00471A;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
 }
 
-/* ===== THANK YOU TEXT ===== */
+/* thank you reply */
 #thank-you-text {
   margin-top: 14px;
   text-align: center;
@@ -186,7 +187,7 @@ form button[type="submit"]:hover {
   color: #ffe8a3;
 }
 
-/* ===== NAV BUTTONS (BLUE LIKE YOUR EXAMPLE) ===== */
+/* Navigation button after confirmation */
 .nav-buttons {
   margin-top: 16px;
   display: flex;
@@ -220,7 +221,7 @@ form button[type="submit"]:hover {
   display: none;
 }
 
-/* ===== HEADER & FOOTER STYLES ===== */
+/* header and footer style */
 [id] {
   scroll-margin-top: 84px;
 }
